@@ -33,7 +33,7 @@ export default function Home() {
         Minim sit voluptate amet est tempor eu.
       </p>
       <div className="py-6 flex justify-center items-center gap-12">
-        <img src={LogoCINFO} width={250} height={250} alt="logo da CINFO" className="w-48" />
+        <Image src={LogoCINFO} width={250} height={250} alt="logo da CINFO" className="w-48" />
         <Link href="https://www2.ifal.edu.br/">
           <Image src={LogoIFAL} width={250} height={250} alt="logo do IFAL" className="w-64" />
         </Link>
