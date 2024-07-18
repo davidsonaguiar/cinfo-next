@@ -12,7 +12,6 @@ interface NoticePage {
 export default async function NoticePage(props: NoticePage) {
   const { slug } = props.params;
   const notice = getNotice(slug);
-  console.log(notice);
 
   return (
     <>

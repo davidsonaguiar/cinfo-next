@@ -9,9 +9,7 @@ import Link from "next/link";
 export default function Home() {
 
   const notices = getNotices();
-  console.log(notices);
   const listNotices = notices.map((notice) => {
-    console.log(notice.slug);
     return (
       <NoticeViewCard
         key={notice.slug}
