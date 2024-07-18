@@ -26,17 +26,6 @@ export default async function NoticePage(props: NoticePage) {
             height={500} 
             className="w-full" 
           />
-          <p className="mt-3 space-x-3 block">
-            {
-              notice.data.tags?.split(",").map(tag => (
-                <span key={tag.id} className="py-2 px-4 bg-primary text-primary-foreground text-sm">
-                  <Link href={`/noticias/tags/${tag.name}`}>
-                    #{tag.name}
-                  </Link>
-                </span>
-              ))
-            }
-          </p>
         </div>
         <Markdown>
           {notice.content}
