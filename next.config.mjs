@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        path: "/src/notice/images/"
-    }
+        path: "/public"
+    },
 };
 
 export default nextConfig;
