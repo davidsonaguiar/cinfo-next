@@ -1,9 +1,9 @@
 import FS from "fs";
 import matter from "gray-matter";
 
-export function getNotices() {
+export function getTeachers() {
 
-    const folder = "./src/notice/notices";
+    const folder = "./src/teachers/teacher";
     const files = FS.readdirSync(folder);
     const markdowns = files.filter((file) => file.endsWith(".mdx"));
   
@@ -11,11 +11,13 @@ export function getNotices() {
       const markdown = FS.readFileSync(`${folder}/${filename}`, "utf-8");
       const matterResult = matter(markdown);
       return {
-        title: matterResult.data.titulo,
-        notice_description: matterResult.data.descricao_da_noticia,
-        cover: matterResult.data.imagem_apresentacao,
-        slug: filename.replace(".mdx", ""),
-      };
+        name: matterResult.data.name,
+        email: matterResult.data.email,
+        workArea: matterResult.data.workArea,
+        personalSite: matterResult.data.personalSite,
+        latter: matterResult.data.latter,
+        avatar: matterResult.data.avatar,
+      }
     });
   
     return posts;

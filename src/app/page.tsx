@@ -2,8 +2,6 @@ import NoticeViewCard from "./components/notice-view-card";
 import Image from "next/image";
 import Title from "./components/title";
 import { getNotices } from "@/notice/get-notices-view";
-import  LogoCINFO from "@/assets/logo02.png";
-import  LogoIFAL from "@/assets/logo-ifal.png";
 import Link from "next/link";
 
 export default function Home() {
@@ -33,9 +31,9 @@ export default function Home() {
         Minim sit voluptate amet est tempor eu.
       </p>
       <div className="py-6 flex justify-center items-center gap-12">
-        <Image src={LogoCINFO} width={250} height={250} alt="logo da CINFO" className="w-48" />
+        <img src="/images/logo02.png" width={250} height={250} alt="logo da CINFO" className="w-48" />
         <Link href="https://www2.ifal.edu.br/">
-          <Image src={LogoIFAL} width={250} height={250} alt="logo do IFAL" className="w-64" />
+          <img src="/images/logo-ifal.png" width={250} height={250} alt="logo do IFAL" className="w-64" />
         </Link>
       </div>
       <div className="w-full p-6 bg-slate-900 border border-border grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
