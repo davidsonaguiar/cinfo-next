@@ -3,7 +3,6 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import Logo from "../../assets/logo.png";
 import Container from "./container";
 
 const routersGroups = [
@@ -25,7 +24,7 @@ export default function Header() {
       <Container className="flex justify-between items-center">
         <Link href="/">
           <span className="sr-only">CINFO</span>
-          <Image src={Logo} alt="CINFO" width={100} />
+          <img src="/images/logo.png" alt="CINFO" width={100}/>
         </Link>
         <nav>
           <ul>

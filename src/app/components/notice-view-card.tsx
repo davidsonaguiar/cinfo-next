@@ -12,8 +12,8 @@ export default function NoticeViewCard(props: NoticeViewCardProps) {
   return (
     <div className="w-full  bg-white grid grid-rows-[200px_200px_40px]">
       <div className="w-full h-full bg-zinc-300">
-        <Image 
-          src={"/src/notice/images/" + props.image} 
+        <img 
+          src={"/images/notice/" + props.image} 
           alt="cover image" 
           width={500} 
           height={500} 
